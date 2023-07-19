@@ -1,0 +1,109 @@
+
+/* shared syle */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Montserrat&family=Playfair+Display:ital,wght@0,700;1,400&family=Work+Sans:wght@400;500;600;700&display=swap');
+/* font use from google */
+*{
+  
+    font-family: 'Montserrat', sans-serif;
+ 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.light-grey{
+    color: var(--gray-4, #BDBDBD);
+font-size: 14px;
+font-weight: 600;
+}
+body{
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+/* section1 syles start */
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile .person{
+
+    width: 100px;
+    height: 100px;
+    margin:0px auto;
+  
+
+}
+.profile .person img{
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+}
+
+.profile .profile-name{
+    color: #4E5150;
+font-size: 1.4rem;
+font-weight: 600;
+}
+
+.profile .profile-des{
+    color: #A9A9A9;
+font-size: 14px;
+font-weight: 600;
+padding: 10px 0px;
+}
+.profile .btn-primary{
+    padding: 10px 14px;
+    width: 100px;
+    height: 60px;
+    border: 0;
+    border-radius: 12px;
+background: #E5E5E5;
+margin-right: 20px;
+
+}
+.profile .profile-btn .number{
+    color: #4E5150;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+/* section1 syles end */
+
+/* section2 syles start */
+
+.section2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+}
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    grid-template-columns: repeat(3,30%);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    place-content: center;
+
+}
+.item2{
+     grid-column: span 2;
+}
+.item3{
+     grid-column: span 2;
+}
+.item4{
+     grid-row: span 2;
+}
+.gallery-container .photo img{
+    width:100%;
+    height: 100%;
+   
+}
+/* section2 syles end*/
